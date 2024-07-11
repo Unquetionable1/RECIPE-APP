@@ -1,19 +1,24 @@
 # Standard library imports
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Remote library imports
 from flask import Flask
 from flask_cors import CORS
+from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
 from flask_restful import Api
-from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
-
-# Local imports
+from flask_sqlalchemy import SQLAlchemy
 
 # Instantiate app, set attributes
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI', 'sqlite:///app.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "super-secret-key")  # Change this to a secure key
 app.json.compact = False
 
 # Define metadata, instantiate db
@@ -29,3 +34,6 @@ api = Api(app)
 
 # Instantiate CORS
 CORS(app)
+
+# Instantiate JWT Manager
+jwt = JWTManager(app)

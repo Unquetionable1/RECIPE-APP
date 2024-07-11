@@ -1,12 +1,9 @@
 from sqlalchemy_serializer import SerializerMixin
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy import Table, Column, Integer, ForeignKey
-
 from config import db
 
-# Models go here!
-
-#Association table for the many-to-many relationship
+# Association table for the many-to-many relationship
 recipe_tag_association = Table('recipe_tag', db.Model.metadata,
     Column('recipe_id', Integer, ForeignKey('recipe.id'), primary_key=True),
     Column('tag_id', Integer, ForeignKey('tag.id'), primary_key=True)
