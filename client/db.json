@@ -1,0 +1,21 @@
+{
+    "mealplans": [
+      {
+        "id": 1,
+        "date": "2024-07-22",
+        "recipes": [
+          {
+            "id": 1,
+            "name": "Spaghetti Carbonara",
+            "ingredients": ["Pasta", "Eggs", "Bacon", "Parmesan cheese", "Garlic", "Olive oil"]
+          },
+          {
+            "id": 2,
+            "name": "Greek Salad",
+            "ingredients": ["Cucumbers", "Tomatoes", "Feta cheese", "Olives", "Red onion", "Olive oil"]
+          }
+        ]
+      }
+    ]
+  }
+  

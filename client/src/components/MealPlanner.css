@@ -1,0 +1,97 @@
+/* src/MealPlanner.css */
+.meal-planner {
+  padding: 20px;
+  background-image: url(/home/erustus/Documents/RECIPE-APP/client/src/b1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.meal-planner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.meal-planner-form input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 4px;
+}
+
+.meal-planner-form input:focus {
+  border-color: rgb(30, 240, 240);
+  outline: none;
+}
+
+.meal-planner-form button {
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(30, 240, 240);
+  border: 2px solid rgb(30, 240, 240);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.meal-planner-form button:hover {
+  background-color: rgb(30, 240, 240);
+  color: white;
+}
+
+.meal-plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meal-plan {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  transition: box-shadow 0.3s;
+}
+
+.meal-plan:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-plan p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  color: white;
+}
+
+.meal-plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-plan ul li {
+  padding: 4px 0;
+  color: white;
+}
+
+.meal-plan button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  background-color: transparent;
+  color: rgb(30, 240, 240);
+  border: 2px solid rgb(30, 240, 240);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.meal-plan button:hover {
+  background-color: rgb(30, 240, 240);
+  color: white;
+}

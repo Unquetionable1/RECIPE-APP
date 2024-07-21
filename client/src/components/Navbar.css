@@ -1,6 +1,7 @@
+/* General styling */
 .navbar {
-  background-color: #b22222;
-  color: #fff;
+  background-color: #182726;
+  color: #23e7dd;
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -50,8 +51,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 6rem;
-  gap: 4rem;
 }
 
 .nav-links {
@@ -83,6 +82,21 @@
   margin: 4px 0;
 }
 
+/* Meal Planner toggle button */
+.meal-planner-toggle {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.meal-planner-toggle:hover {
+  text-decoration: underline;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .nav-link-container {
@@ -112,3 +126,23 @@
     display: flex;
   }
 }
+
+
+/* src/Navbar.css */
+.nav-button {
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(30, 240, 240);
+  border: 2px solid rgb(30, 240, 240);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-button:hover {
+  background-color: rgb(30, 240, 240);
+  color: white;
+}
+

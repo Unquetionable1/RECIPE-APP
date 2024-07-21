@@ -4,9 +4,9 @@
   max-width: 400px;
   margin: 0 auto; /* Center horizontally */
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 8px solid #2c94da88;
   border-radius: 8px;
-  background-color: #f9faf9de;
+  background-color: #43ebddde;
   
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
   width: 70%;

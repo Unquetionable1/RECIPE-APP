@@ -2,7 +2,7 @@
   background-color: rgb(56, 56, 56);
 }
 .recipeCardContainer {
-  background-color: rgb(163, 163, 163);
+  background-color: rgb(225, 233, 232);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,7 +17,7 @@
   width: 210px;
   font-family: "Arial";
   padding: 1rem;
-  background: #ffffff;
+  background: #f3f3f3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   margin: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -48,7 +48,7 @@
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  background-color: #c42e00;
+  background-color: #00c4c4;
   color: #f1f1f1;
   cursor: pointer;
   text-align: center;
@@ -56,6 +56,6 @@
 }
 
 .recipeCardButton:hover {
-  background-color: #ff0000;
+  background-color: #0026ff;
   transform: scale(1.05);
 }

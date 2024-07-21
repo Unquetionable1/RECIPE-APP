@@ -1,8 +1,8 @@
+// src/Navbar.js
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import chefIcon from '../images/chef.png'; // Import your icon here
-
 
 function Navbar() {
   const [user, setUser] = useState(null);
@@ -35,33 +35,41 @@ function Navbar() {
         <div className={`nav-link-container ${isOpen ? "open" : ""}`}>
           <ul>
             <li className="nav-links">
-              <Link to="/" className="navs" onClick={toggleMenu}>
+              <Link to="/" className="navs" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
             </li>
             {user ? (
               <>
-            <li className="nav-links">
-              <Link to="/discover" className="navs" onClick={toggleMenu}>
-                Discover
-              </Link>
-            </li>
-            <li className="nav-links">
-              <Link to="/recipes" className="navs" onClick={toggleMenu}>
-                Recipes
-              </Link>
-            </li>
-                <li className="nav-links" onClick={handleLogout}>
-                  <Link className="login">Logout</Link>
+                <li className="nav-links">
+                  <Link to="/discover" className="navs" onClick={() => setIsOpen(false)}>
+                    Discover
+                  </Link>
+                </li>
+                <li className="nav-links">
+                  <Link to="/recipes" className="navs" onClick={() => setIsOpen(false)}>
+                    Recipes
+                  </Link>
+                </li>
+                <li className="nav-links">
+                  <button className="nav-button" onClick={handleLogout}>
+                    Logout
+                  </button>
                 </li>
               </>
             ) : (
               <li className="nav-links">
-                <Link to="/login" className="login" onClick={toggleMenu}>
+                <Link to="/login" className="login" onClick={() => setIsOpen(false)}>
                   Login
                 </Link>
               </li>
             )}
+            {/* Link to Meal Planner */}
+            <li className="nav-links">
+              <Link to="/mealplanner" className="nav-button" onClick={() => setIsOpen(false)}>
+                Meal Planner
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="hamburger" onClick={toggleMenu}>
