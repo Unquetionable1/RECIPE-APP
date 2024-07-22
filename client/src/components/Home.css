@@ -10,8 +10,8 @@
 
 .intro {
   display: flex;
-  flex-direction: row; /* Ensure items are displayed side by side */
-  align-items: center; /* Center items vertically */
+  flex-direction: row; 
+  align-items: center; 
   padding: 20px;
   margin-left: 20px;
 }
