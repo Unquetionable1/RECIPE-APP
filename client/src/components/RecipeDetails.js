@@ -4,8 +4,7 @@ import CommentComponent from "./CommentComponent";
 import TagComponent from "./TagComponent";
 import FavoritesComponent from "./FavoriteComponent";
 import RatingComponent from "./RatingComponent";
-
-
+import './RecipeDetails.css'; // Import the CSS file
 
 const RecipeDetails = () => {
   const { recipeId } = useParams();
@@ -79,7 +78,7 @@ const RecipeDetails = () => {
       console.error("Error updating recipe:", error);
     }
   };
-  
+
   const handleDelete = async () => {
     try {
       const response = await fetch(`http://localhost:5000/recipes/${recipeId}`, {
@@ -169,8 +168,10 @@ const RecipeDetails = () => {
               required
             />
           </div>
-          <button type="submit">Save Changes</button>
-          <button type="button" onClick={toggleEditMode}>
+          <button className="save-button" type="submit">
+            Save Changes
+          </button>
+          <button className="cancel-button" type="button" onClick={toggleEditMode}>
             Cancel
           </button>
         </form>
