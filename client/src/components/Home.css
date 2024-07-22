@@ -5,7 +5,7 @@
   padding: 20px;
   background-image: url(../images/b1.jpg);  
   color: #fff;
-  min-height: calc(100vh - 60px); /* Adjust according to your navbar height */
+  min-height: calc(100vh - 60px);
 }
 
 .intro {
