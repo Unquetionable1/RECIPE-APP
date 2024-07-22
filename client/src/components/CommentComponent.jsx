@@ -33,7 +33,7 @@ export default function CommentComponent({ recipeId }) {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ content, recipe_id: recipeId }),
-          credentials: 'include', // Include credentials in the request
+          credentials: 'include', 
         }
       );
       const data = await res.json();
