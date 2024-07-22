@@ -33,17 +33,15 @@ export default function CommentComponent({ recipeId }) {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ content, recipe_id: recipeId }),
-          credentials: 'include', 
+          credentials: 'include', // Include credentials in the request
         }
       );
       const data = await res.json();
       if (!res.ok) {
-        alert(`Failed to add comment: ${data.message}`);
-        console.log(data);
+        console.error(`Failed to add comment: ${data.message}`);
         throw new Error("Failed to add comment");
       } else {
-        alert("Comment added successfully!");
-        console.log(data);
+        console.log("Comment added successfully!");
         fetchComments(); 
       }
       setContent(""); 

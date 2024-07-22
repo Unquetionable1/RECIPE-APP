@@ -38,12 +38,10 @@ const TagComponent = ({ recipeId }) => {
       );
       const data = await response.json();
       if (!response.ok) {
-        alert(`Failed to add tag: ${data.message}`);
-        console.log(data);
+        console.error(`Failed to add tag: ${data.message}`);
         throw new Error("Failed to add tag");
       } else {
-        alert("Tag added successfully!");
-        console.log(data);
+        console.log("Tag added successfully!");
         fetchTags(); // Refresh tags after adding new tag
       }
       setNewTag(""); // Clear input field after successful tag submission

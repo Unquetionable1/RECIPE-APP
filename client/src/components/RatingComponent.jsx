@@ -38,7 +38,7 @@ const RatingComponent = ({ recipeId }) => {
         alert(`Failed to add rating: ${data.message}`);
         throw new Error("Failed to add rating");
       } else {
-        alert("Rating added successfully!");
+        console.log("Rating added successfully!");
         fetchRatings(); // Refresh ratings after adding new rating
       }
       setNewRating(""); // Clear input field after successful rating submission

@@ -33,10 +33,10 @@ const FavoritesComponent = ({ recipeId }) => {
       });
       const data = await response.json();
       if (!response.ok) {
-        alert(`Failed to add favorite: ${data.message}`);
+        console.error(`Failed to add favorite: ${data.message}`);
         throw new Error("Failed to add favorite");
       } else {
-        alert("Favorite added successfully!");
+        console.log("Favorite added successfully!");
         fetchFavorites();
       }
     } catch (error) {
