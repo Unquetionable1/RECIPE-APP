@@ -7,7 +7,7 @@ import "../styles/Register.css";
 const RegisterForm = () => {
   const navigate = useNavigate();
 
-  // Define Yup schema for form validation
+  // Define Yup
   const validationSchema = Yup.object().shape({
     username: Yup.string()
       .required('Username is required'),
