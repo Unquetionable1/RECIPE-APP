@@ -8,7 +8,7 @@ const MealPlanner = () => {
   const [editIndex, setEditIndex] = useState(null);
 
   useEffect(() => {
-    // Fetch existing meal plans from local storage or server
+    
     const storedPlans = JSON.parse(localStorage.getItem("mealplans")) || [];
     setMealPlans(storedPlans);
   }, []);
