@@ -1,6 +1,6 @@
 // src/MealPlanner.js
 import React, { useState, useEffect } from "react";
-import "./MealPlanner.css"; // Make sure to create this CSS file for styling
+import "./MealPlanner.css";
 
 const MealPlanner = () => {
   const [mealPlans, setMealPlans] = useState([]);
