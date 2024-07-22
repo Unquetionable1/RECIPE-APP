@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-image: url(/home/erustus/Documents/RECIPE-APP/client/src/b1.jpg);  
+  background-image: url(../images/b1.jpg);  
   color: #fff;
   min-height: calc(100vh - 60px); /* Adjust according to your navbar height */
 }
