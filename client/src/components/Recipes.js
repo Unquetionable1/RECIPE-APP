@@ -7,6 +7,7 @@ const Recipes = () => {
   const [recipes, setRecipesState] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
+  const pageStyle = {overflowX: "hidden", };
 
   useEffect(() => {
     fetchRecipes();
@@ -45,7 +46,7 @@ const Recipes = () => {
     return <h1>Loading ....</h1>;
   }
   return (
-    <div>
+    <div style={pageStyle}>
       <h2>Recipes</h2>
       <div className={styles.container}>
         <input
