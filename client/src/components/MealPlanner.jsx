@@ -29,7 +29,7 @@ const MealPlanner = () => {
     if (newMeal.date && newMeal.meals.length > 0) {
       const updatedPlans = editIndex !== null ? [...mealPlans] : [...mealPlans, newMeal];
       if (editIndex !== null) {
-        updatedPlans[editIndex] = newMeal; // Update existing plan
+        updatedPlans[editIndex] = newMeal;
       }
       setMealPlans(updatedPlans);
       localStorage.setItem("mealplans", JSON.stringify(updatedPlans));
