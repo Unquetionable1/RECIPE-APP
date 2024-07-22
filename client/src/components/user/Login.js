@@ -36,7 +36,7 @@ const Login = () => {
       const data = await response.json();
       console.log(data);
       localStorage.setItem("user", JSON.stringify({ username: values.username }));
-      setIsAuth(true); // Set authentication state to true
+      setIsAuth(true); //authentication state to true
       navigate("/recipes"); // Redirect after successful login
     } catch (error) {
       console.error("Login error:", error);
