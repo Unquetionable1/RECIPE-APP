@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthProvider";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import "../styles/Login.css"; // Import your CSS file for styling
+import "../styles/Login.css"; // Import your CSS file
 
 const LoginSchema = Yup.object().shape({
   username: Yup.string().required("Username is required"),
