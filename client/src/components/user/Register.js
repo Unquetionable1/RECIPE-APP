@@ -37,7 +37,7 @@ const RegisterForm = () => {
       });
 
       if (response.ok) {
-        alert('Registration successful!');
+        console.log('Registration successful!');
         navigate('/login'); // Redirect to login after successful registration
       } else {
         const data = await response.json();

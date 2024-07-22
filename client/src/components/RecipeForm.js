@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import './RecipeForm.css'; // Import the CSS file
 
 const RecipeForm = () => {
   const navigate = useNavigate();
@@ -45,7 +46,7 @@ const RecipeForm = () => {
   };
 
   return (
-    <div>
+    <div className="recipe-form-container">
       <h2>Add New Recipe</h2>
       <Formik
         initialValues={initialValues}
