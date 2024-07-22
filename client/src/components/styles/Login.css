@@ -53,7 +53,7 @@
 }
 
 .login-container button:disabled {
-  background-color: #b0c4de; /* Light blue-gray when disabled */
+  background-color: #b0c4de;
   cursor: not-allowed;
 }
 
