@@ -5,7 +5,7 @@ import "./MealPlanner.css";
 const MealPlanner = () => {
   const [mealPlans, setMealPlans] = useState([]);
   const [newMeal, setNewMeal] = useState({ date: "", meals: [""] });
-  const [editIndex, setEditIndex] = useState(null); // Track which meal plan is being edited
+  const [editIndex, setEditIndex] = useState(null);
 
   useEffect(() => {
     // Fetch existing meal plans from local storage or server
