@@ -40,7 +40,7 @@ const Login = () => {
       navigate("/recipes"); // Redirect after successful login
     } catch (error) {
       console.error("Login error:", error);
-      setFieldError("password", "Invalid username or password"); // Set error message for invalid credentials
+      setFieldError("password", "Invalid username or password"); // error message
     } finally {
       setSubmitting(false);
     }
